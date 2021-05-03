@@ -1,0 +1,524 @@
+html, body {
+    font-family: fantasy;
+    font-size: 1.2vw;
+    background-image: url(Thumbnails/Mountain\ Landscape\ First\ Person1_RF_RMPL-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0%
+}
+
+h1 {
+    color: rgb(59, 38, 23);
+    text-shadow: 2px 2px 3px burlywood;
+    font-size: 3vw;
+    text-align: center;
+ }
+/*============================================
+            NAVIGATION BAR
+==============================================*/
+
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* This ensures that the images cannot
+        render outside of their container 
+        without forcing any scrollbars  */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content:"";
+    /* top: 0
+      left: 0*/   
+    /* position: absolute; */ /*  to the top edge of the screen */
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    /*background-color: rgba(255, 255, 255, 0,5*/
+}
+
+    /* ======================
+    Adding menu interactions 
+    =========================*/
+
+.menu {
+    color: #fff;
+    font: bolder 16px/20px fantasy;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.menu li {
+    color: antiquewhite;
+    background-color: rgb(72, 57, 3) ;
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    opacity: .8;                        
+    padding: 15px 2%;
+    border: ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.5);
+    border-radius: 3px;
+    /* background-color #052136 */
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    color: #fff;
+    background-color: rgba(100,65,0,.3);
+}
+
+/*============================================
+                HOME SECTION
+=============================================*/
+.hero-image {
+    position: relative;
+    background-image: url(Thumbnails/Thumbnail_11.png);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    margin-top: 22.5%;
+    margin-left: 16.5%;
+    font-size: 2.9vw;
+    font-weight: bolder;
+    text-shadow: 3px 3px 1px rgb(72, 57, 3);
+    color: white;
+
+}
+
+
+/*=============================================
+                GALLERY SECTION
+==============================================*/
+
+        /* Section container */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: rgba(250, 235, 215, .7); 
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid  rgb(72,57,3);
+    background-color: rgb(5, 58, 51);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
+}
+
+    /* Individual photo containers */
+
+.photo-container {
+    text-align: center;
+    margin: 1.5% auto;
+    width: 30%;
+    height: 25%;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Text over top of pictures */
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+h3 {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+    /* Hovering over pictures */
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*  Create four equal columns that float next to each other  */
+.column {
+    float: left;
+    width: 10%;
+}
+
+/* ================== The Modal ==================== */
+.row {
+    padding-left: 17.5%;
+
+}
+.center {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+}
+
+/*  Background  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 22px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/*  Modal Content  */
+.modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.bottom-padding {
+    padding-bottom: 50px;
+}
+
+/*   Close Button   */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide Slides By Default */
+.mySlides {
+    display: none;
+}
+
+/* Next & Previous Buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50%;
+    color: white;
+    font-weight: bold;
+    font-size: 3vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position "Next" Button On Right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Add Slightly See-Through Black Background To Hover */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*  Number Text  */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 2.5vw;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/*  Caption Text  */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+    height: 100px;
+    width: 125px;
+}
+
+.demo.active {
+    opacity: 1; 
+}
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*========================================
+               VIDEOS
+=========================================*/
+
+.container2 {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px auto;
+    background-color:  rgba(250, 235, 215, .7);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
+    padding-left: 10px;
+    align-content: center;
+}
+
+.iframe {
+    position: relative;
+
+}
+
+/*=========================================
+            RESERVATIONS
+==========================================*/
+
+
+
+.reservation {
+    width: 40%;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: antiquewhite;
+    opacity: .8;
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color:#3b744dee;
+    font-weight: 700;
+    font-size: 1.7vw;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+    text-shadow: 1px 1px 2px rgb(72, 57, 3);
+}
+
+.reservation h2 span {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    color:#3b744dee;
+    font-weight: bolder;
+    font-size: 2.5vw;
+    font-variant: small-caps;
+    letter-spacing: .2pt;
+    word-spacing: .3pt;
+}
+
+.reservation p {
+    color:#3b744dee;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.reservation form {
+    font-size: 1.3vw;
+    outline: none;
+    font-weight: 600;
+    color:rgb(72, 57, 3);
+    padding: 12px 12px;
+    width: 50%;
+    border: 1px solid #8D8D80;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: burlywood;
+    box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
+    font-family: fantasy;
+}
+
+.reservation input[type="text"] {
+    font-size: 1.3vw;
+    outline: none;
+    font-weight: 600;
+    color:antiquewhite;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 5% 1em;
+    border-radius: 7px;
+    background: rgb(72, 57, 3);
+    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(100,65,0,.8);
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+.terms {
+    font-size: 1.1vw;
+    line-height: 5px;
+    color: rgb(5, 58, 51);
+    cursor: pointer; 
+    font-family: fantasy;
+    position: relative;
+    display: inline;
+    margin-left: 12%;
+}
+
+.terms:hover {
+    color: antiquewhite;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: rgb(225,225,225);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: fantasy;
+    margin-left:  35%;
+    margin-top: 4%;
+    padding: 7px 0px;
+    width: 30%;
+    font-size: 1.3vw;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #3b744dee;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3)
+}
+
+.submit input[type="submit"]:hover {
+    color: rgb(72, 57, 3);
+    background-color: whitesmoke;
+    box-shadow: inset 1px 2 px 15px 0 rgba(0,0,0,0.5);
+}
+
+/*================================================
+                    FOOTER
+=================================================*/
+#footer {
+    background-color:rgb(5, 58, 51);
+    color:antiquewhite;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: left;
+
+}

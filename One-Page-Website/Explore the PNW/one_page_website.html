@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Visit the PNW</title>
+        <link rel="stylesheet" href="one_page_website.css">
+        <script src="one_page_website.js" defer></script>
+    </head>
+
+    <body>
+        
+<!----------------------NAV-------------------------->
+        <div class="wrap">
+            <div class="menu-container">
+                <ul class="menu">
+                    <a href="#home"><li>HOME</li></a>
+                    <a href="#gallery"><li>GALLERY</li></a>
+                    <a href="#videos"><li>VIDEOS</li></a>
+                    <a href="#contact"><li>RESERVATIONS</li></a>
+                </ul>
+            </div>
+        </div>
+<!---------------------END NAV------------------------->
+
+<!----------------------HOME--------------------------->
+        <div id="home">
+            <div class="hero-image">
+                <div class="hero-text">
+                    <p>Explore<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PNW<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;us!</p>
+
+                </div>
+            </div>
+        </div>
+<!---------------------END HOME------------------------>
+
+
+<!----------------------GALLERY------------------------>
+        
+        <section id="gallery">
+            <div class="container">
+                    <br><br><h1>GALLERY</h1>
+                    <div class="flex-container">
+                        <!----- IMAGES USED TO OPEN THE LIGHTBOX ----->
+                        <!--- PHOTO CONTAINER 1 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_12.jpg" alt="Aspen Grove, Ochoco National Forest, OR" 
+                                           class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(1)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 1-->
+
+                        <!--- PHOTO CONTAINER 2 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_13.png" alt="Steens Mountain Wilderness, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(2)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 2-->
+
+                        <!--- PHOTO CONTAINER 3 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_11.png" alt="Maxwell Lake, Wallowa National Forest, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(3)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 3-->
+
+                        <!--- PHOTO CONTAINER 4 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/staircase.png" alt="Forest Staircase, North Cascades NP" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(4)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 4-->
+
+                        <!--- PHOTO CONTAINER 5 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_16.png" alt="Sunrise Over Lake Billy Chinook, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(5)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 5-->
+
+                        <!--- PHOTO CONTAINER 6 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_17.png" alt="Painted Hills, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(6)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 6-->
+
+                        <!--- PHOTO CONTAINER 7 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_10.png" alt="Devil's Lake, North Cascades NP" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(7)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 7-->
+
+                        <!--- PHOTO CONTAINER 8 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_4.png" alt="Paradise Park, Mt. Hood, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(8)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 8-->
+
+                        <!--- PHOTO CONTAINER 9 --->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_5.png" alt="Lake Valhalla, Wenatchee National Forest, WA"class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(9)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 9-->
+
+                        <!-- PHOTO CONTAINER 10 -->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_6.png" alt="Enchanted Valley, Olympic National Park, WA" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(10)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 10 -->
+
+                        <!-- PHOTO CONTAINER 11 -->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_3.jpg" alt="Mt. Hood, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal();currentSlide(11)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 11 -->
+
+                        <!-- PHOTO CONTAINER 12 -->
+                        <div class="photo-container">
+                            <div class="photo">
+                                <img src="Thumbnails/Thumbnail_2.jpg" alt="Sunset, Deschutes River, OR" class="hover-shadow">
+                                <div class="photo-overlay" onclick="openModal(12);currentSlide(1)">        
+                                    <h3>Click to Enlarge</h3>
+                                    <h4>Sign up for your northwest adventure today!</h4>
+                                </div>   
+                            </div>
+                        </div>
+                        <!-- END PHOTO CONTAINER 12 -->
+                    </div>
+                    <!----- THE MODAL/LIGHTBOX ----->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides center">
+                                <div class="numbertext">1/12</div>
+                                <img src="Thumbnails/Thumbnail_12.jpg" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">2/12</div>
+                                <img src="Thumbnails/Thumbnail_13.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">3/12</div>
+                                <img src="Thumbnails/Thumbnail_11.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">4/12</div>
+                                <img src="Thumbnails/staircase.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">5/12</div>
+                                <img src="Thumbnails/Thumbnail_16.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">6/12</div>
+                                <img src="Thumbnails/Thumbnail_17.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">7/12</div>
+                                <img src="Thumbnails/Thumbnail_10.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">8/12</div>
+                                <img src="Thumbnails/Thumbnail_4.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">9/12</div>
+                                <img src="Thumbnails/Thumbnail_5.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">10/12</div>
+                                <img src="Thumbnails/Thumbnail_6.png" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">11/12</div>
+                                <img src="Thumbnails/Thumbnail_3.jpg" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides center">
+                                <div class="numbertext">12/12</div>
+                                <img src="Thumbnails/Thumbnail_2.jpg" style="width: 100%">
+                            </div>
+
+                            <!--- NEXT/PREVIOUS CONTROLS --->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <!--------- CAPTION TEXT ------->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <!-- THUMBNAIL IMAGE CONTROLS -->
+                            <div class="row">
+                                    <img class="demo" src="Thumbnails/Thumbnail_12.jpg" onclick="currentSlide(1)" 
+                                        alt="Aspen Grove, Ochoco National Forest, OR">
+
+                                    <img class="demo" src="Thumbnails/Thumbnail_13.png" alt="Steens Mountain Wilderness, OR" 
+                                        onclick="currentSlide(2)">
+
+                                    <img class="demo" src="Thumbnails/Thumbnail_11.png" alt="Maxwell Lake, Wallowa National Forest, OR"
+                                        onclick="currentSlide(3)">
+
+                                    <img class="demo" src="Thumbnails/staircase.png" alt="Forest Staircase, North Cascades National Park, WA"
+                                        onclick="currentSlide(4)">
+                                                  
+                                    <img class="demo" src="Thumbnails/Thumbnail_16.png" alt="Sunrise Over Lake Billy Chinook, OR"
+                                         onclick="currentSlide(5)">
+
+                                    <img class="demo" src="Thumbnails/Thumbnail_17.png" alt="Painted Hills, OR"
+                                        onclick="currentSlide(6)">
+                            </div>
+                            <div class="row bottom-padding">
+                                    <img class="demo" src="Thumbnails/Thumbnail_10.png" alt="Devil's Lake, North Cascades National Park, WA"
+                                        onclick="currentSlide(7)">
+
+                                    <img class="demo" src="Thumbnails/Thumbnail_4.png" alt="Paradise Park, Mt. Hood, OR"
+                                        onclick="currentSlide(8)">
+                                
+                                    <img class="demo" src="Thumbnails/Thumbnail_5.png" alt="Lake Valhalla, Wenatchee National Forest, WA"
+                                        onclick="currentSlide(9)">
+
+                                    <img class="demo" src="Thumbnails/Thumbnail_6.png" alt="Enchanted Valley, Olympic National Park, WA"
+                                        onclick="currentSlide(10)">
+
+                                   <img class="demo" src="Thumbnails/Thumbnail_3.jpg" alt="Snowgrass Flats, Gifford-Pinchot National Forest, OR"
+                                        onclick="currentSlide(11)">
+
+                                   <img class="demo" src="Thumbnails/Thumbnail_2.jpg" alt="Sunset, Deschutes River, OR"
+                                        onclick="currentSlide(12)">
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+<!--------------------END GALLERY-------------------->
+
+
+<!---------------------START VIDEOS------------------>
+
+        <section id="videos">
+            <h1>VIDEOS</h1>
+            <div class="container2">
+                <iframe src="videos/IMG_5735.m4v" title="Phoeny in a lake"></iframe>
+                <iframe src="videos/IMG_0546.m4v" title="Phoeny in a field"></iframe>
+            </div>
+        </section>
+
+<!---------------------END VIDEOS-------------------->
+
+
+<!-----------------------RSVP------------------------>
+        <section id="contact">
+            <div class="container">
+                
+                    <br><br><h1>RESERVATIONS</h1>
+                
+                <div class="reservation">
+                        <h2><span>Your Northwest adventure awaits...
+                            <br> Book your trip today!</span>
+                        </h2><br>
+                        <p class="rsvp-text">
+                            Please provide us with your basic contact information
+                        </p>
+                        <div class="form-rsvp">
+                            <form action="" method="post">
+                                <input class="rsvp" type="text" value="" placeholder="First Name"><br>
+                                <input class="rsvp" type="text" value="" placeholder="Last Name"><br>
+                                <input class="rsvp" type="text" value="" placeholder="Email Address"><br>
+                                <input class="rsvp" type="text" value="" placeholder="Phone Number"><br>
+                                
+                                <br>
+                                <div class="submit">
+                                    <input type="submit" value="Submit">
+                                </div>
+
+                                <div class="form-spacer">
+                                    <label class="terms">Terms and Conditions</label>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+        <br><br><br>
+<!--------------------END RSVP----------------------->
+
+<!---------------------FOOTER------------------------>
+        <div id="footer">
+            www.explorethenorthwest.pnw &nbsp; | &nbsp;&copy;2020
+        </div>
+        <!----END FOOTER--->
+
+
+    </body>
+</html>
