@@ -7,3 +7,6 @@ Curated collection of projects
 - St. Phoenix Site
 - C# Live Project
 
+## Django Checkbook
+This application created using Django tracks faux bank accounts. Users can create new accounts, enter transancations, and view their balance sheets.
+
